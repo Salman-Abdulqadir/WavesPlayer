@@ -1,0 +1,26 @@
+.navigation {
+  min-height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  button {
+    padding: 10px 20px;
+    background: transparent;
+    border: 3px solid rgb(65, 65, 65);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(65, 65, 65);
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    button {
+      z-index: 99;
+      position: sticky;
+      top: 0;
+    }
+  }
+}
